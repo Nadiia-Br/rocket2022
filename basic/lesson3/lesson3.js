@@ -49,9 +49,28 @@ const cat ={
 //     console.log(chatKey)
 // }
 
-let keys = Object.keys(cat);
-let values = Object.values(cat);
-let entries = Object.entries(cat);
-console.log(keys);
-console.log(values);
-console.log(entries);
+// let keys = Object.keys(cat);
+// let values = Object.values(cat);
+// let entries = Object.entries(cat);
+// console.log(keys);
+// console.log(values);
+// console.log(entries);
+
+
+
+// const catJSON = JSON.stringify(cat);
+// console.log(catJSON);
+//
+// const catParsed = JSON.parse(catJSON);
+// console.log(catParsed)
+
+
+function printSomething(whatToPtint){
+    console.log('THIS IS FUNCTION', whatToPtint)
+}
+
+printSomething(5);
+printSomething('chat');    ///// press  ctrl+P
+printSomething('hi');
+printSomething(false);
+printSomething(['cat', 7777, 'Kyiv']);
