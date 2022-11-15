@@ -1,79 +1,68 @@
-// // Дано масив [1, 2, 3, 4, 5]. Зробіть з нього масив [1, 2, 3, 'a', 'b', 'c', 4, 5].
+// //1. Дано масив [1, 2, 3, 4, 5]. Зробіть з нього масив [1, 2, 3, 'a', 'b', 'c', 4, 5].
 // //     Підказка. Необхідно стерти елементи, зберегти їх кудись. Дописати букви і після букв повернути стерті цифри
 
-let arr1 = [1, 2, 3, 4, 5];
+// let arr1 = [1, 2, 3, 4, 5];
+//
+// let delEl1 = arr1.pop();
+// let delEl2 = arr1.pop();
+//
+// console.log(arr1);
+// arr1.push('a','b','c');
+// arr1.push(delEl2, delEl1);
+// console.log(arr1);
 
-let
 
 
-// // - Данo масив [1, 2, 3, 4, 5]. Зробіть з нього масив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].
+
+
+// // 2. Данo масив [1, 2, 3, 4, 5]. Зробіть з нього масив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].
 // //     Підказка. Працюйте по принципу задачі вище.
-//
-// const arr = [1, 2, 3, 4, 5]; // => [1, 2, 3, 'a', 'b', 'c', 4, 5]
-// const arr2 = [1, 2, 3, 4, 5]; // => [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e']
-//
-// // const five = arr.pop();
-// // const four = arr.pop();
-// //
-// // console.log(arr);
-// // arr.push('a', 'b', 'c', four, five);
-// //
-// // console.log(arr);
-// //
-// // arr[6] = arr[3]
-// // arr[7] = arr[4]
-// //
-// // console.log(arr);
-// //
-// // arr[3] = 'a'
-// // arr[4] = 'b'
-// // arr[5] = 'c'
-// //
-// // console.log(arr);
-//
-// // const one = arr2.shift();
-// // const five = arr2.pop();
-// // arr2.unshift(one, 'a', 'b');
-// // arr2.push('c', five, 'e');
-// //
-// // console.log(arr2);
-//
 
-// пустий масив заповнити 50парними/непарними числами,
-// робила через for і do while але виводить тільки 25 парних чисел
-
-// const arr = [];
+// let arr2 = [1, 2, 3, 4, 5];
 //
-// for (let i = 0; arr.length < 50; i = i + 2) {
+// let delEl1 = arr2.pop();
+// let delEl2 = arr2.pop();
+// let delEl3 = arr2.pop();
+// let delEl4 = arr2.pop();
+//
+//
+// console.log(arr2);
+// arr2.push('a','b', delEl4,delEl3,delEl2,'c',delEl1,'e');
+// console.log(arr2);
+
+
+// 3. пустий масив заповнити 50парними/непарними числами,
+
+// let arr3 = [];
+//
+// for (let i = 0; arr3.length < 50; i = i + 2) {
 //   console.log(i);
-//
-//   arr.push(i)
+//   arr3.push(i)
 // }
 //
-// console.log(arr);
+// console.log(arr3);
 
-// // 8. Створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо елемент є числом - додати його в інший масив.
-//
-// const randomArr = [2, '222', 'fasle', true, 18, [], 0, Symbol('x'), { name: 'Dasaha' }];
-// const otherArr = [];
-// const anotherAtt = []
-//
-// for (const element of randomArr) {
-//   if (typeof element === "number") {
-//     otherArr.push(element);
-//   }
-// }
-//
-// console.log(otherArr);
-// for (const element of otherArr) {
-//   anotherAtt.push(element * 5);
-// }
-//
-// console.log(anotherAtt)
 
-// Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.
+
+// // 4. Створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо елемент є числом - додати його в інший масив.
+
+// let arr4 = [7, 'smth', 4, true, 123, 0, 'js', 'node', 'lviv', 2222, NaN];
+// let newArr = [];
 //
-// const prices = [100, 250, 50, 168, 120, 345, 188];
+// for (const arr4Element of arr4) {
+//     if (typeof arr4Element === 'number'){
+//         newArr.push(arr4Element);
+//     }
+// }
+// console.log(newArr);
+
+
+
+
+
+// 5. Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.
+
+// let prices = [7000, 100, 15, 84, 168, 120, 345, 188];
 // let priceSum = 0;
 //
 // for (const price of prices) {
@@ -84,5 +73,17 @@ let
 //
 // console.log(priceSum / prices.length);
 
-// Вивести кожен елемент масиву, сусід справа якого є парним
+
+
+
+
+//  6. Вивести кожен елемент масиву, сусід справа якого є парним
 // EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56
+
+// let arr6 = [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ];
+//
+// for (let i = 0; i < arr6.length; i++) {
+//     if(arr6[i + 1] % 2 === 0){
+//         console.log(arr6[i]);
+//     }
+// }
